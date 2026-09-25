@@ -45,6 +45,7 @@ See the [deployment guide](docs/deployment.md) for setup details. R2 may incur a
 - **Text Send:** Enabled by default, no extra configuration required.
 - **File Send:** Requires a storage backend (KV or R2), same as [attachments](#attachments-support).
 
+
 > [!NOTE]
 > Due to the D1 single-row size limit of 2 MB, the maximum text Send size is approximately **1.8 MiB**. Additionally, the `/api/sync` endpoint serializes all of the current user's Sends into the response. A large number of Sends or very large text Sends will significantly increase CPU time and response size.
 
